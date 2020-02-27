@@ -21,6 +21,8 @@ public class Vaga {
 			System.out.println(nome + " colocando as compras no carro");
 			System.out.println(nome + " entrando no carro");
 			System.out.println(nome + " saindo da vaga");
+			
+			limpeza();
 		}
 		
 	}
@@ -44,7 +46,21 @@ public class Vaga {
 			System.out.println(nome + " colocando as compras no carro");
 			System.out.println(nome + " entrando no carro");
 			System.out.println(nome + " saindo da vaga");
+			
+			limpeza();
 		}
 		
+	}
+	
+	public void limpeza() {
+		System.out.println("Realizando limpeza da vaga");
+		
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+		
+		System.out.println("Limpeza realizada. Vaga liberada!");
 	}
 }
